@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/app.ts",
+    "start": "node build/app.js",
     "dev": "nodemon src/app.ts",
     "build": "tsc -p .",
+    "heroku-postbuild": "yarn build",
     "serve": "node build/app.js"
   },
   "dependencies": {
