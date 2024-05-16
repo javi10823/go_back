@@ -4,4 +4,4 @@ import { verifySecretKey } from '../Middleware/image.middleware';
 
 export const router = Router();
 
-router.post('/text-to-image', verifySecretKey, addTextToImageHandler);
+router.get('/text-to-image', verifySecretKey, addTextToImageHandler);
